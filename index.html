@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mundo Digital</title>
+  
+  <!-- Google Fonts (requisito) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  
+  <!-- Header (requisito semántico) -->
+  <header>
+    <div class="container">
+      <h1 id="mainTitle">Explorando el Mundo Digital</h1>
+      <p>Descubre las últimas tendencias tecnológicas</p>
+    </div>
+  </header>
+
+  <!-- Sección principal (requisito semántico) -->
+  <section class="content">
+    <div class="container">
+      
+      <h2>La Revolución Digital</h2>
+      <p>
+        Vivimos en una era donde la tecnología avanza a pasos agigantados. 
+        Cada innovación transforma nuestra manera de vivir, trabajar y comunicarnos 
+        con el resto del mundo.
+      </p>
+
+      <!-- Campo de texto interactivo (requisito JS) -->
+      <div class="interactive-area">
+        <h3>Personaliza tu experiencia</h3>
+        <label for="nameInput">Escribe tu nombre:</label>
+        <input type="text" id="nameInput" placeholder="Tu nombre aquí...">
+        <p class="output">Bienvenido, <span id="outputName">visitante</span></p>
+      </div>
+
+      <!-- Imagen intercambiable (requisito JS) -->
+      <div class="image-area">
+        <h3>Galería Interactiva</h3>
+        <p class="instruction">Haz clic en la imagen para cambiarla</p>
+        <img id="switchImage" src="images/img1.jpg" alt="Imagen tecnológica 1">
+      </div>
+
+      <!-- Imagen fija adicional (requisito HTML) -->
+      <div class="fixed-area">
+        <h3>Innovación Constante</h3>
+        <img src="images/img3.jpg" alt="Innovación tecnológica" class="static-img">
+        <p>
+          La innovación tecnológica no se detiene. Cada día surgen nuevas 
+          herramientas que facilitan nuestra vida cotidiana y profesional.
+        </p>
+      </div>
+
+      <!-- Información adicional -->
+      <div class="info-box">
+        <h3>Datos Interesantes</h3>
+        <ul>
+          <li>Más de 5 mil millones de personas usan internet</li>
+          <li>El comercio electrónico crece un 20% anualmente</li>
+          <li>La inteligencia artificial está en todas partes</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Sección con enlace externo (requisito HTML) -->
+  <section class="resources">
+    <div class="container">
+      <h3>Recursos Adicionales</h3>
+      <p>
+        Para estar al día con las últimas noticias tecnológicas, 
+        te recomendamos visitar sitios especializados.
+      </p>
+      <a 
+        href="https://www.wired.com" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        title="Wired - Revista de tecnología e innovación - Se abre en nueva ventana"
+        class="btn-link"
+      >
+        Visitar página →
+      </a>
+    </div>
+  </section>
+
+  <!-- Elemento en movimiento (requisito JS) -->
+  <div id="movingBox"></div>
+
+  <!-- Footer (requisito semántico) -->
+  <footer>
+    <div class="container">
+      <p>&copy;TIC</p>
+     
+    </div>
+  </footer>
+
+  <script src="scripts/script.js"></script>
+</body>
+</html>
