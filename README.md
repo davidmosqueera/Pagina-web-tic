@@ -41,6 +41,6 @@ Se ha buscado un diseño limpio, actual y visualmente claro, con tipografía mod
 ## Enlace a la página web
 La web está publicada y accesible en el siguiente enlace:
 
-👉 [[https://[TUUSUARIO.github.io(https://braispg2026-maker.github.io/Pagina-web-tic/)](https://braispg2026-maker.github.io/Pagina-web-tic/)](https://davidmosqueera.github.io/Pagina-web-tic/)
+👉 [[https://(https://davidmosqueera.github.io/Pagina-web-tic/)
 
 
