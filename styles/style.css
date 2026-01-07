@@ -1,0 +1,271 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variables de color */
+:root {
+  --primary: #2563eb;
+  --secondary: #1e40af;
+  --dark: #1f2937;
+  --light: #f3f4f6;
+  --white: #ffffff;
+  --text: #374151;
+}
+
+/* Estilos generales */
+body {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
+  color: var(--text);
+  background-color: var(--white);
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header */
+header {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: var(--white);
+  padding: 50px 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  letter-spacing: -1px;
+}
+
+header p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  opacity: 0.95;
+}
+
+/* Secciones */
+.content {
+  padding: 60px 20px;
+}
+
+.content h2 {
+  font-size: 2.2rem;
+  color: var(--dark);
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.content h3 {
+  font-size: 1.6rem;
+  color: var(--primary);
+  margin: 40px 0 20px;
+  font-weight: 600;
+}
+
+.content p {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  line-height: 1.8;
+}
+
+/* Área interactiva */
+.interactive-area {
+  background-color: var(--light);
+  padding: 30px;
+  border-radius: 10px;
+  margin: 30px 0;
+}
+
+.interactive-area label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: var(--dark);
+}
+
+#nameInput {
+  width: 100%;
+  max-width: 400px;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border: 2px solid #d1d5db;
+  border-radius: 6px;
+  font-family: 'Montserrat', sans-serif;
+  transition: border-color 0.3s;
+}
+
+#nameInput:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+.output {
+  margin-top: 20px;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--primary);
+}
+
+#outputName {
+  font-weight: 700;
+  color: var(--secondary);
+}
+
+/* Área de imagen */
+.image-area {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.instruction {
+  font-size: 0.95rem;
+  color: #6b7280;
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+#switchImage {
+  max-width: 100%;
+  width: 500px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+#switchImage:hover {
+  transform: scale(1.03);
+}
+
+/* Imagen fija */
+.fixed-area {
+  margin: 40px 0;
+  text-align: center;
+}
+
+.static-img {
+  max-width: 100%;
+  width: 600px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.12);
+  margin: 20px 0;
+}
+
+/* Caja de información */
+.info-box {
+  background-color: #fef3c7;
+  padding: 30px;
+  border-radius: 10px;
+  border-left: 5px solid #f59e0b;
+  margin: 40px 0;
+}
+
+.info-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.info-box li {
+  padding: 10px 0;
+  padding-left: 30px;
+  position: relative;
+  font-size: 1.05rem;
+}
+
+.info-box li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #f59e0b;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+/* Recursos */
+.resources {
+  background-color: var(--light);
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.resources h3 {
+  font-size: 1.8rem;
+  color: var(--dark);
+  margin-bottom: 15px;
+}
+
+.resources p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  color: var(--text);
+}
+
+.btn-link {
+  display: inline-block;
+  padding: 15px 35px;
+  background-color: var(--primary);
+  color: var(--white);
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1.05rem;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 4px 10px rgba(37, 99, 235, 0.3);
+}
+
+.btn-link:hover {
+  background-color: var(--secondary);
+  transform: translateY(-2px);
+}
+
+/* Caja en movimiento (JS) */
+#movingBox {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, #f59e0b, #ef4444);
+  border-radius: 50%;
+  box-shadow: 0 4px 15px rgba(239, 68, 68, 0.4);
+  pointer-events: none;
+  z-index: 9999;
+}
+
+/* Footer */
+footer {
+  background-color: var(--dark);
+  color: var(--white);
+  padding: 40px 20px;
+  text-align: center;
+}
+
+footer p {
+  margin: 5px 0;
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+  
+  .content h2 {
+    font-size: 1.8rem;
+  }
+  
+  #switchImage,
+  .static-img {
+    width: 100%;
+  }
+}
